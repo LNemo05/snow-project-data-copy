@@ -1,0 +1,14 @@
+# release artifacts (built by hand, never committed)
+*.zip
+*.tar.gz
+*.tgz
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# editors
+.vscode/
+.idea/
+*.swp

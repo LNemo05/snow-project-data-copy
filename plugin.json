@@ -1,0 +1,26 @@
+{
+  "id": "com.wu.memcopy",
+  "name": { "default": "Project Data Copier", "zh-CN": "项目数据复制" },
+  "description": {
+    "default": "Copy project memories and memos between projects (e.g. local to SSH) without touching the source.",
+    "zh-CN": "在项目之间复制项目记忆与备忘录（例如本机复制到 SSH 项目），源项目只读不受影响。"
+  },
+  "version": "1.2.0",
+  "author": "Wu",
+  "license": "MIT",
+  "icon": "lucide:Copy",
+  "renderMode": "esm",
+  "entry": "index.js",
+  "panels": [
+    {
+      "id": "main",
+      "title": { "default": "Data Copier", "zh-CN": "数据复制" },
+      "icon": "lucide:Copy"
+    }
+  ],
+  "styles": ["style.css"],
+  "privacy": {
+    "scopes": ["memory", "memos"],
+    "note": "读取项目记忆与备忘录并在项目之间复制（写入目标项目）。不会修改或删除源项目的任何数据。"
+  }
+}
